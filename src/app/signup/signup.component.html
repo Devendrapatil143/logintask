@@ -1,0 +1,29 @@
+<h2>Registration  form</h2>  
+ <h2>{{msg}}</h2> 
+<form  [formGroup]="login_form" (ngSubmit)="login()">
+
+    <div>
+        
+        <label>Email Id</label>
+        <input type="text" formControlName="email">
+    </div><br>
+    
+    <div>
+        <label> Password </label>
+        <input type="password"  formControlName="password">
+    </div><br>
+    
+    <div>
+        <input type="submit" value="Register here">
+    </div>
+    <div>
+      
+    </div>
+    </form>
+
+   
+  
+          
+        <h2>  <a [routerLink]="['/login']">Login</a> <br><br> </h2>  
+          
+    
